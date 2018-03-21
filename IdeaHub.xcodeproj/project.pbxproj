@@ -7,21 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B5A2C4F378B815737EA4A35 /* Pods_IdeaHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E14CF7A87C8881B9370521 /* Pods_IdeaHub.framework */; };
 		FCAE68A92062879F003548C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68A82062879F003548C0 /* AppDelegate.swift */; };
-		FCAE68AB2062879F003548C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68AA2062879F003548C0 /* ViewController.swift */; };
+		FCAE68AB2062879F003548C0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68AA2062879F003548C0 /* WelcomeViewController.swift */; };
 		FCAE68AE2062879F003548C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68AC2062879F003548C0 /* Main.storyboard */; };
 		FCAE68B02062879F003548C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68AF2062879F003548C0 /* Assets.xcassets */; };
 		FCAE68B32062879F003548C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68B12062879F003548C0 /* LaunchScreen.storyboard */; };
+		FCAE68BB206288BE003548C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68BA206288BE003548C0 /* GoogleService-Info.plist */; };
+		FCAE68BD20628EEC003548C0 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68BC20628EEC003548C0 /* Auth.storyboard */; };
+		FCAE68C020629954003548C0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68BF20629954003548C0 /* LogInViewController.swift */; };
+		FCAE68C220629962003548C0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68C120629962003548C0 /* SignUpViewController.swift */; };
+		FCAE68C42062A164003548C0 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68C32062A164003548C0 /* ViewControllerExtensions.swift */; };
+		FCAE68C62062C7F6003548C0 /* IdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68C52062C7F6003548C0 /* IdeaViewController.swift */; };
+		FCAE68C92062C996003548C0 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68C82062C996003548C0 /* PostViewController.swift */; };
+		FCAE68CB2062C9A1003548C0 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68CA2062C9A1003548C0 /* ExploreViewController.swift */; };
+		FCAE68CD2062C9A8003548C0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68CC2062C9A8003548C0 /* ProfileViewController.swift */; };
+		FCAE68CF2062C9CC003548C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68CE2062C9CC003548C0 /* DetailViewController.swift */; };
+		FCAE68D22062D05B003548C0 /* IdeaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68D02062D05B003548C0 /* IdeaCollectionViewCell.swift */; };
+		FCAE68D32062D05B003548C0 /* IdeaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68D12062D05B003548C0 /* IdeaCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46DB4A7033FA01F00532CE43 /* Pods-IdeaHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdeaHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IdeaHub/Pods-IdeaHub.debug.xcconfig"; sourceTree = "<group>"; };
+		8DF55435BD650E3C2575F5B7 /* Pods-IdeaHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdeaHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-IdeaHub/Pods-IdeaHub.release.xcconfig"; sourceTree = "<group>"; };
+		99E14CF7A87C8881B9370521 /* Pods_IdeaHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdeaHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAE68A52062879F003548C0 /* IdeaHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAE68A82062879F003548C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCAE68AA2062879F003548C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCAE68AA2062879F003548C0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		FCAE68AD2062879F003548C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCAE68AF2062879F003548C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCAE68B22062879F003548C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCAE68B42062879F003548C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAE68BA206288BE003548C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCAE68BC20628EEC003548C0 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		FCAE68BF20629954003548C0 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		FCAE68C120629962003548C0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FCAE68C32062A164003548C0 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		FCAE68C52062C7F6003548C0 /* IdeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaViewController.swift; sourceTree = "<group>"; };
+		FCAE68C82062C996003548C0 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		FCAE68CA2062C9A1003548C0 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		FCAE68CC2062C9A8003548C0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FCAE68CE2062C9CC003548C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FCAE68D02062D05B003548C0 /* IdeaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaCollectionViewCell.swift; sourceTree = "<group>"; };
+		FCAE68D12062D05B003548C0 /* IdeaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdeaCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5A2C4F378B815737EA4A35 /* Pods_IdeaHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D04E7B14B9CE8DD8E40F604 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46DB4A7033FA01F00532CE43 /* Pods-IdeaHub.debug.xcconfig */,
+				8DF55435BD650E3C2575F5B7 /* Pods-IdeaHub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97E15979679E04B4A7123B85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99E14CF7A87C8881B9370521 /* Pods_IdeaHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCAE689C2062879F003548C0 = {
 			isa = PBXGroup;
 			children = (
 				FCAE68A72062879F003548C0 /* IdeaHub */,
 				FCAE68A62062879F003548C0 /* Products */,
+				1D04E7B14B9CE8DD8E40F604 /* Pods */,
+				97E15979679E04B4A7123B85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +103,41 @@
 			isa = PBXGroup;
 			children = (
 				FCAE68A82062879F003548C0 /* AppDelegate.swift */,
-				FCAE68AA2062879F003548C0 /* ViewController.swift */,
+				FCAE68C32062A164003548C0 /* ViewControllerExtensions.swift */,
 				FCAE68AC2062879F003548C0 /* Main.storyboard */,
+				FCAE68BE20628EFB003548C0 /* Authentication */,
+				FCAE68C72062C804003548C0 /* Idea */,
 				FCAE68AF2062879F003548C0 /* Assets.xcassets */,
+				FCAE68C82062C996003548C0 /* PostViewController.swift */,
+				FCAE68CA2062C9A1003548C0 /* ExploreViewController.swift */,
+				FCAE68CC2062C9A8003548C0 /* ProfileViewController.swift */,
 				FCAE68B12062879F003548C0 /* LaunchScreen.storyboard */,
+				FCAE68BA206288BE003548C0 /* GoogleService-Info.plist */,
 				FCAE68B42062879F003548C0 /* Info.plist */,
 			);
 			path = IdeaHub;
+			sourceTree = "<group>";
+		};
+		FCAE68BE20628EFB003548C0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FCAE68BC20628EEC003548C0 /* Auth.storyboard */,
+				FCAE68AA2062879F003548C0 /* WelcomeViewController.swift */,
+				FCAE68BF20629954003548C0 /* LogInViewController.swift */,
+				FCAE68C120629962003548C0 /* SignUpViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FCAE68C72062C804003548C0 /* Idea */ = {
+			isa = PBXGroup;
+			children = (
+				FCAE68C52062C7F6003548C0 /* IdeaViewController.swift */,
+				FCAE68D02062D05B003548C0 /* IdeaCollectionViewCell.swift */,
+				FCAE68D12062D05B003548C0 /* IdeaCollectionViewCell.xib */,
+				FCAE68CE2062C9CC003548C0 /* DetailViewController.swift */,
+			);
+			path = Idea;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCAE68B72062879F003548C0 /* Build configuration list for PBXNativeTarget "IdeaHub" */;
 			buildPhases = (
+				2F7B23174C00ED2ED7D7FC53 /* [CP] Check Pods Manifest.lock */,
 				FCAE68A12062879F003548C0 /* Sources */,
 				FCAE68A22062879F003548C0 /* Frameworks */,
 				FCAE68A32062879F003548C0 /* Resources */,
+				DACE90B3286DE8DE514D42A3 /* [CP] Embed Pods Frameworks */,
+				7BE9D6447F2A08FE376554EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCAE68B32062879F003548C0 /* LaunchScreen.storyboard in Resources */,
+				FCAE68BB206288BE003548C0 /* GoogleService-Info.plist in Resources */,
+				FCAE68BD20628EEC003548C0 /* Auth.storyboard in Resources */,
+				FCAE68D32062D05B003548C0 /* IdeaCollectionViewCell.xib in Resources */,
 				FCAE68B02062879F003548C0 /* Assets.xcassets in Resources */,
 				FCAE68AE2062879F003548C0 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +213,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F7B23174C00ED2ED7D7FC53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IdeaHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BE9D6447F2A08FE376554EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IdeaHub/Pods-IdeaHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DACE90B3286DE8DE514D42A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IdeaHub/Pods-IdeaHub-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IdeaHub/Pods-IdeaHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCAE68A12062879F003548C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCAE68AB2062879F003548C0 /* ViewController.swift in Sources */,
+				FCAE68AB2062879F003548C0 /* WelcomeViewController.swift in Sources */,
+				FCAE68C62062C7F6003548C0 /* IdeaViewController.swift in Sources */,
+				FCAE68C92062C996003548C0 /* PostViewController.swift in Sources */,
+				FCAE68D22062D05B003548C0 /* IdeaCollectionViewCell.swift in Sources */,
 				FCAE68A92062879F003548C0 /* AppDelegate.swift in Sources */,
+				FCAE68CB2062C9A1003548C0 /* ExploreViewController.swift in Sources */,
+				FCAE68C220629962003548C0 /* SignUpViewController.swift in Sources */,
+				FCAE68CD2062C9A8003548C0 /* ProfileViewController.swift in Sources */,
+				FCAE68CF2062C9CC003548C0 /* DetailViewController.swift in Sources */,
+				FCAE68C42062A164003548C0 /* ViewControllerExtensions.swift in Sources */,
+				FCAE68C020629954003548C0 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +423,7 @@
 		};
 		FCAE68B82062879F003548C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46DB4A7033FA01F00532CE43 /* Pods-IdeaHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +438,7 @@
 		};
 		FCAE68B92062879F003548C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF55435BD650E3C2575F5B7 /* Pods-IdeaHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
