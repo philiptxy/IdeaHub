@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B5A2C4F378B815737EA4A35 /* Pods_IdeaHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E14CF7A87C8881B9370521 /* Pods_IdeaHub.framework */; };
+		FC7139012064DFC900E14E10 /* IdeaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7138FF2064DFC900E14E10 /* IdeaTableViewCell.swift */; };
+		FC7139022064DFC900E14E10 /* IdeaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7139002064DFC900E14E10 /* IdeaTableViewCell.xib */; };
 		FCAE68A92062879F003548C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68A82062879F003548C0 /* AppDelegate.swift */; };
 		FCAE68AB2062879F003548C0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68AA2062879F003548C0 /* WelcomeViewController.swift */; };
 		FCAE68AE2062879F003548C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68AC2062879F003548C0 /* Main.storyboard */; };
@@ -17,20 +19,26 @@
 		FCAE68BD20628EEC003548C0 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68BC20628EEC003548C0 /* Auth.storyboard */; };
 		FCAE68C020629954003548C0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68BF20629954003548C0 /* LogInViewController.swift */; };
 		FCAE68C220629962003548C0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68C120629962003548C0 /* SignUpViewController.swift */; };
-		FCAE68C42062A164003548C0 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68C32062A164003548C0 /* ViewControllerExtensions.swift */; };
+		FCAE68C42062A164003548C0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68C32062A164003548C0 /* Extensions.swift */; };
 		FCAE68C62062C7F6003548C0 /* IdeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68C52062C7F6003548C0 /* IdeaViewController.swift */; };
 		FCAE68C92062C996003548C0 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68C82062C996003548C0 /* PostViewController.swift */; };
 		FCAE68CB2062C9A1003548C0 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68CA2062C9A1003548C0 /* ExploreViewController.swift */; };
 		FCAE68CD2062C9A8003548C0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68CC2062C9A8003548C0 /* ProfileViewController.swift */; };
 		FCAE68CF2062C9CC003548C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68CE2062C9CC003548C0 /* DetailViewController.swift */; };
-		FCAE68D22062D05B003548C0 /* IdeaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68D02062D05B003548C0 /* IdeaCollectionViewCell.swift */; };
-		FCAE68D32062D05B003548C0 /* IdeaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68D12062D05B003548C0 /* IdeaCollectionViewCell.xib */; };
+		FCAE68D52062D96B003548C0 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68D42062D96B003548C0 /* Functions.swift */; };
+		FCAE68DA2063AD0B003548C0 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68D92063AD0B003548C0 /* AddLocationViewController.swift */; };
+		FCAE68DC2063B475003548C0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAE68DB2063B475003548C0 /* CoreLocation.framework */; };
+		FCB090BC2063CA4B0006F08B /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB090BB2063CA4B0006F08B /* LocationSearchTable.swift */; };
+		FCB090BE206412750006F08B /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB090BD206412750006F08B /* Idea.swift */; };
+		FCB090C020641F150006F08B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB090BF20641F150006F08B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46DB4A7033FA01F00532CE43 /* Pods-IdeaHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdeaHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IdeaHub/Pods-IdeaHub.debug.xcconfig"; sourceTree = "<group>"; };
 		8DF55435BD650E3C2575F5B7 /* Pods-IdeaHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdeaHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-IdeaHub/Pods-IdeaHub.release.xcconfig"; sourceTree = "<group>"; };
 		99E14CF7A87C8881B9370521 /* Pods_IdeaHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdeaHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7138FF2064DFC900E14E10 /* IdeaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaTableViewCell.swift; sourceTree = "<group>"; };
+		FC7139002064DFC900E14E10 /* IdeaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdeaTableViewCell.xib; sourceTree = "<group>"; };
 		FCAE68A52062879F003548C0 /* IdeaHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAE68A82062879F003548C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCAE68AA2062879F003548C0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -42,14 +50,18 @@
 		FCAE68BC20628EEC003548C0 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		FCAE68BF20629954003548C0 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		FCAE68C120629962003548C0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		FCAE68C32062A164003548C0 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		FCAE68C32062A164003548C0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FCAE68C52062C7F6003548C0 /* IdeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaViewController.swift; sourceTree = "<group>"; };
 		FCAE68C82062C996003548C0 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		FCAE68CA2062C9A1003548C0 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		FCAE68CC2062C9A8003548C0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FCAE68CE2062C9CC003548C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FCAE68D02062D05B003548C0 /* IdeaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaCollectionViewCell.swift; sourceTree = "<group>"; };
-		FCAE68D12062D05B003548C0 /* IdeaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdeaCollectionViewCell.xib; sourceTree = "<group>"; };
+		FCAE68D42062D96B003548C0 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		FCAE68D92063AD0B003548C0 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
+		FCAE68DB2063B475003548C0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FCB090BB2063CA4B0006F08B /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		FCB090BD206412750006F08B /* Idea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
+		FCB090BF20641F150006F08B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAE68DC2063B475003548C0 /* CoreLocation.framework in Frameworks */,
 				4B5A2C4F378B815737EA4A35 /* Pods_IdeaHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +89,7 @@
 		97E15979679E04B4A7123B85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCAE68DB2063B475003548C0 /* CoreLocation.framework */,
 				99E14CF7A87C8881B9370521 /* Pods_IdeaHub.framework */,
 			);
 			name = Frameworks;
@@ -103,12 +117,15 @@
 			isa = PBXGroup;
 			children = (
 				FCAE68A82062879F003548C0 /* AppDelegate.swift */,
-				FCAE68C32062A164003548C0 /* ViewControllerExtensions.swift */,
+				FCAE68C32062A164003548C0 /* Extensions.swift */,
+				FCAE68D42062D96B003548C0 /* Functions.swift */,
+				FCB090BD206412750006F08B /* Idea.swift */,
+				FCB090BF20641F150006F08B /* User.swift */,
 				FCAE68AC2062879F003548C0 /* Main.storyboard */,
 				FCAE68BE20628EFB003548C0 /* Authentication */,
 				FCAE68C72062C804003548C0 /* Idea */,
 				FCAE68AF2062879F003548C0 /* Assets.xcassets */,
-				FCAE68C82062C996003548C0 /* PostViewController.swift */,
+				FCAE68D82063AC57003548C0 /* Post */,
 				FCAE68CA2062C9A1003548C0 /* ExploreViewController.swift */,
 				FCAE68CC2062C9A8003548C0 /* ProfileViewController.swift */,
 				FCAE68B12062879F003548C0 /* LaunchScreen.storyboard */,
@@ -133,11 +150,21 @@
 			isa = PBXGroup;
 			children = (
 				FCAE68C52062C7F6003548C0 /* IdeaViewController.swift */,
-				FCAE68D02062D05B003548C0 /* IdeaCollectionViewCell.swift */,
-				FCAE68D12062D05B003548C0 /* IdeaCollectionViewCell.xib */,
+				FC7138FF2064DFC900E14E10 /* IdeaTableViewCell.swift */,
+				FC7139002064DFC900E14E10 /* IdeaTableViewCell.xib */,
 				FCAE68CE2062C9CC003548C0 /* DetailViewController.swift */,
 			);
 			path = Idea;
+			sourceTree = "<group>";
+		};
+		FCAE68D82063AC57003548C0 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				FCAE68C82062C996003548C0 /* PostViewController.swift */,
+				FCAE68D92063AD0B003548C0 /* AddLocationViewController.swift */,
+				FCB090BB2063CA4B0006F08B /* LocationSearchTable.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +232,8 @@
 				FCAE68B32062879F003548C0 /* LaunchScreen.storyboard in Resources */,
 				FCAE68BB206288BE003548C0 /* GoogleService-Info.plist in Resources */,
 				FCAE68BD20628EEC003548C0 /* Auth.storyboard in Resources */,
-				FCAE68D32062D05B003548C0 /* IdeaCollectionViewCell.xib in Resources */,
 				FCAE68B02062879F003548C0 /* Assets.xcassets in Resources */,
+				FC7139022064DFC900E14E10 /* IdeaTableViewCell.xib in Resources */,
 				FCAE68AE2062879F003548C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,15 +307,20 @@
 			files = (
 				FCAE68AB2062879F003548C0 /* WelcomeViewController.swift in Sources */,
 				FCAE68C62062C7F6003548C0 /* IdeaViewController.swift in Sources */,
+				FCB090BE206412750006F08B /* Idea.swift in Sources */,
 				FCAE68C92062C996003548C0 /* PostViewController.swift in Sources */,
-				FCAE68D22062D05B003548C0 /* IdeaCollectionViewCell.swift in Sources */,
+				FCB090C020641F150006F08B /* User.swift in Sources */,
 				FCAE68A92062879F003548C0 /* AppDelegate.swift in Sources */,
+				FCAE68DA2063AD0B003548C0 /* AddLocationViewController.swift in Sources */,
 				FCAE68CB2062C9A1003548C0 /* ExploreViewController.swift in Sources */,
+				FC7139012064DFC900E14E10 /* IdeaTableViewCell.swift in Sources */,
+				FCB090BC2063CA4B0006F08B /* LocationSearchTable.swift in Sources */,
 				FCAE68C220629962003548C0 /* SignUpViewController.swift in Sources */,
 				FCAE68CD2062C9A8003548C0 /* ProfileViewController.swift in Sources */,
 				FCAE68CF2062C9CC003548C0 /* DetailViewController.swift in Sources */,
-				FCAE68C42062A164003548C0 /* ViewControllerExtensions.swift in Sources */,
+				FCAE68C42062A164003548C0 /* Extensions.swift in Sources */,
 				FCAE68C020629954003548C0 /* LogInViewController.swift in Sources */,
+				FCAE68D52062D96B003548C0 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

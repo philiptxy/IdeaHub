@@ -1,0 +1,43 @@
+//
+//  Functions.swift
+//  IdeaHub
+//
+//  Created by Philip Teow on 22/03/2018.
+//  Copyright © 2018 Philip Teow. All rights reserved.
+//
+
+import Foundation
+import FirebaseAuth
+import FirebaseDatabase
+
+
+class functions {
+
+    var ref : DatabaseReference!
+
+    init() {
+        ref = Database.database().reference()
+    }
+    
+    func getCurrentUserID() -> String {
+        guard let id = Auth.auth().currentUser else {return ""}
+        return id.uid
+    }
+    
+//    func getProfilePicURL(userID: String) -> String {
+//       var URL = ""
+//        ref.child("users").child(userID).observeSingleEvent(of: .value) { (snapshot) in
+//            guard let dict = snapshot.value as? [String : Any] else {return}
+//            URL = dict["profilePicURL"] as? String ?? ""
+//
+//        }
+//        return URL
+//    }
+    
+    
+    
+    
+    
+    
+    
+}

@@ -75,7 +75,7 @@ class SignUpViewController: UIViewController {
                         self.uploadToStorage(image)
                     }
                     
-                    let newUser : [String : Any] = ["email" : email, "firstName" : firstName, "lastName" : lastName]
+                    let newUser : [String : Any] = ["email" : email, "firstName" : firstName, "lastName" : lastName, "numOfUnstarted" : 0, "numOfInProgress" : 0, "numOfIncomplete" : 0, "numOfComplete" : 0]
                     
                     self.ref.child("users").child(validUser.uid).setValue(newUser)
                     
@@ -120,7 +120,7 @@ class SignUpViewController: UIViewController {
             }
             
             if let downloadURL = meta?.downloadURL()?.absoluteString {
-                self.ref.child("users").child(uid).child("profilePicUrl").setValue(downloadURL)
+                self.ref.child("users").child(uid).child("profilePicURL").setValue(downloadURL)
             }
         }
     }
