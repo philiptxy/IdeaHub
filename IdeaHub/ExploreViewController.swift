@@ -21,12 +21,17 @@ class ExploreViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var searchBar: UISearchBar! {
+        didSet {
+            searchBar.delegate = self
+        }
+    }
     
     //-------------------- Global Variables -----------------------
     
     var ref : DatabaseReference!
     var ideas : [Idea] = []
-    
+    var filteredIdeas : [Idea] = []
     
     //---------------------- viewDidLoad -------------------------
     
@@ -54,6 +59,7 @@ class ExploreViewController: UIViewController {
             DispatchQueue.main.async {
                 if anIdea.posterID != currentUserID {
                     self.ideas.append(anIdea)
+                    self.filteredIdeas.append(anIdea)
                     self.tableView.reloadData()
                 }
             }
@@ -67,7 +73,7 @@ class ExploreViewController: UIViewController {
 extension ExploreViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ideas.count
+        return filteredIdeas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -75,7 +81,7 @@ extension ExploreViewController : UITableViewDataSource {
         
         cell.selectionStyle = .none
         
-        let currentIdea = ideas[indexPath.row]
+        let currentIdea = filteredIdeas[indexPath.row]
         
         //FORMATTING date
         let formatterFrom = DateFormatter()
@@ -115,12 +121,29 @@ extension ExploreViewController : UITableViewDataSource {
 extension ExploreViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let selectedIdea = ideas[indexPath.row]
+        let selectedIdea = filteredIdeas[indexPath.row]
         
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {return}
         vc.selectedIdea = selectedIdea
         
         navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension ExploreViewController : UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else {
+            filteredIdeas = ideas
+            tableView.reloadData()
+            return
+        }
+        
+        //true - not filtered out
+        filteredIdeas = ideas.filter({ (idea) -> Bool in
+            idea.name.lowercased().contains(searchText.lowercased())
+        })
+        self.tableView.reloadData()
+        
     }
 }
 

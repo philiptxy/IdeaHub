@@ -354,7 +354,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tRS-Qe-YnS">
-                                <rect key="frame" x="10" y="74" width="355" height="534"/>
+                                <rect key="frame" x="10" y="130" width="355" height="478"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Nzb-Bx-KCg">
@@ -367,10 +367,17 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-iu-87K">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tRS-Qe-YnS" firstAttribute="top" secondItem="bSe-XL-Rgh" secondAttribute="top" constant="10" id="N0k-eg-rad"/>
+                            <constraint firstItem="vAY-iu-87K" firstAttribute="trailing" secondItem="bSe-XL-Rgh" secondAttribute="trailing" id="9F4-b3-wsg"/>
+                            <constraint firstItem="vAY-iu-87K" firstAttribute="top" secondItem="bSe-XL-Rgh" secondAttribute="top" id="Gzz-99-IfW"/>
+                            <constraint firstItem="vAY-iu-87K" firstAttribute="leading" secondItem="bSe-XL-Rgh" secondAttribute="leading" id="UIQ-wT-ruW"/>
+                            <constraint firstItem="tRS-Qe-YnS" firstAttribute="top" secondItem="vAY-iu-87K" secondAttribute="bottom" constant="10" id="bBl-bG-E4Y"/>
                             <constraint firstItem="bSe-XL-Rgh" firstAttribute="trailing" secondItem="tRS-Qe-YnS" secondAttribute="trailing" constant="10" id="onf-co-eqx"/>
                             <constraint firstItem="tRS-Qe-YnS" firstAttribute="leading" secondItem="bSe-XL-Rgh" secondAttribute="leading" constant="10" id="t2c-En-ZOa"/>
                             <constraint firstItem="bSe-XL-Rgh" firstAttribute="bottom" secondItem="tRS-Qe-YnS" secondAttribute="bottom" constant="10" id="ygu-fY-vVz"/>
@@ -379,12 +386,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="UaP-ZC-h7s"/>
                     <connections>
+                        <outlet property="searchBar" destination="vAY-iu-87K" id="X41-94-AVt"/>
                         <outlet property="tableView" destination="tRS-Qe-YnS" id="36M-xj-R9E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yO-5o-Yg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="432"/>
+            <point key="canvasLocation" x="524" y="431.33433283358323"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="7Eb-C9-VwF">
