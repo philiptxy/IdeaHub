@@ -20,11 +20,18 @@ class IdeaViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var searchBar: UISearchBar! {
+        didSet {
+            searchBar.delegate = self
+        }
+    }
+    
     
     //-------------------- Global Variables -----------------------
     
     var ref : DatabaseReference!
     var myIdeas : [Idea] = []
+    var filteredIdeas : [Idea] = []
     
     
     //---------------------- viewDidLoad -------------------------
@@ -53,6 +60,7 @@ class IdeaViewController: UIViewController {
             DispatchQueue.main.async {
                 if anIdea.posterID == currentUserID {
                     self.myIdeas.append(anIdea)
+                    self.filteredIdeas.append(anIdea)
                     self.tableView.reloadData()
                 }
             }
@@ -66,7 +74,7 @@ class IdeaViewController: UIViewController {
 extension IdeaViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myIdeas.count
+        return filteredIdeas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -74,7 +82,7 @@ extension IdeaViewController : UITableViewDataSource {
         
         cell.selectionStyle = .none
         
-        let currentIdea = myIdeas[indexPath.row]
+        let currentIdea = filteredIdeas[indexPath.row]
         
         //FORMATTING date
         let formatterFrom = DateFormatter()
@@ -114,7 +122,7 @@ extension IdeaViewController : UITableViewDataSource {
 extension IdeaViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let selectedIdea = myIdeas[indexPath.row]
+        let selectedIdea = filteredIdeas[indexPath.row]
         
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {return}
         vc.selectedIdea = selectedIdea
@@ -123,6 +131,21 @@ extension IdeaViewController : UITableViewDelegate {
     }
 }
 
-
+extension IdeaViewController : UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else {
+            filteredIdeas = myIdeas
+            tableView.reloadData()
+            return
+        }
+        
+        //true - not filtered out
+        filteredIdeas = myIdeas.filter({ (idea) -> Bool in
+            idea.name.lowercased().contains(searchText.lowercased())
+        })
+        self.tableView.reloadData()
+        
+    }
+}
 
 

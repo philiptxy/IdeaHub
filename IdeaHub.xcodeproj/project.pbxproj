@@ -10,6 +10,10 @@
 		4B5A2C4F378B815737EA4A35 /* Pods_IdeaHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E14CF7A87C8881B9370521 /* Pods_IdeaHub.framework */; };
 		FC7139012064DFC900E14E10 /* IdeaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7138FF2064DFC900E14E10 /* IdeaTableViewCell.swift */; };
 		FC7139022064DFC900E14E10 /* IdeaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7139002064DFC900E14E10 /* IdeaTableViewCell.xib */; };
+		FC80BAF32065392D006C726E /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC80BAF22065392D006C726E /* CommentViewController.swift */; };
+		FC80BAF520653B50006C726E /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC80BAF420653B50006C726E /* CommentTableViewCell.swift */; };
+		FC80BAF720653C50006C726E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC80BAF620653C50006C726E /* Comment.swift */; };
+		FC80BAF920655383006C726E /* ViewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC80BAF820655383006C726E /* ViewLocationViewController.swift */; };
 		FCAE68A92062879F003548C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68A82062879F003548C0 /* AppDelegate.swift */; };
 		FCAE68AB2062879F003548C0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE68AA2062879F003548C0 /* WelcomeViewController.swift */; };
 		FCAE68AE2062879F003548C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAE68AC2062879F003548C0 /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 		99E14CF7A87C8881B9370521 /* Pods_IdeaHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdeaHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7138FF2064DFC900E14E10 /* IdeaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaTableViewCell.swift; sourceTree = "<group>"; };
 		FC7139002064DFC900E14E10 /* IdeaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdeaTableViewCell.xib; sourceTree = "<group>"; };
+		FC80BAF22065392D006C726E /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		FC80BAF420653B50006C726E /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		FC80BAF620653C50006C726E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FC80BAF820655383006C726E /* ViewLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLocationViewController.swift; sourceTree = "<group>"; };
 		FCAE68A52062879F003548C0 /* IdeaHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdeaHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAE68A82062879F003548C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCAE68AA2062879F003548C0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +161,10 @@
 				FC7138FF2064DFC900E14E10 /* IdeaTableViewCell.swift */,
 				FC7139002064DFC900E14E10 /* IdeaTableViewCell.xib */,
 				FCAE68CE2062C9CC003548C0 /* DetailViewController.swift */,
+				FC80BAF820655383006C726E /* ViewLocationViewController.swift */,
+				FC80BAF22065392D006C726E /* CommentViewController.swift */,
+				FC80BAF420653B50006C726E /* CommentTableViewCell.swift */,
+				FC80BAF620653C50006C726E /* Comment.swift */,
 			);
 			path = Idea;
 			sourceTree = "<group>";
@@ -310,6 +322,7 @@
 				FCB090BE206412750006F08B /* Idea.swift in Sources */,
 				FCAE68C92062C996003548C0 /* PostViewController.swift in Sources */,
 				FCB090C020641F150006F08B /* User.swift in Sources */,
+				FC80BAF32065392D006C726E /* CommentViewController.swift in Sources */,
 				FCAE68A92062879F003548C0 /* AppDelegate.swift in Sources */,
 				FCAE68DA2063AD0B003548C0 /* AddLocationViewController.swift in Sources */,
 				FCAE68CB2062C9A1003548C0 /* ExploreViewController.swift in Sources */,
@@ -317,8 +330,11 @@
 				FCB090BC2063CA4B0006F08B /* LocationSearchTable.swift in Sources */,
 				FCAE68C220629962003548C0 /* SignUpViewController.swift in Sources */,
 				FCAE68CD2062C9A8003548C0 /* ProfileViewController.swift in Sources */,
+				FC80BAF520653B50006C726E /* CommentTableViewCell.swift in Sources */,
 				FCAE68CF2062C9CC003548C0 /* DetailViewController.swift in Sources */,
 				FCAE68C42062A164003548C0 /* Extensions.swift in Sources */,
+				FC80BAF920655383006C726E /* ViewLocationViewController.swift in Sources */,
+				FC80BAF720653C50006C726E /* Comment.swift in Sources */,
 				FCAE68C020629954003548C0 /* LogInViewController.swift in Sources */,
 				FCAE68D52062D96B003548C0 /* Functions.swift in Sources */,
 			);
